@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crown of Kings Liquor</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #111;
+        color: #f5f5f5;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: rgba(0,0,0,0.8);
+        padding: 20px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1 {
+        color: gold;
+        margin: 0;
+    }
+
+    nav a {
+        color: #ddd;
+        margin: 0 15px;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: gold;
+    }
+
+    section {
+        padding: 80px 20px;
+        min-height: 100vh;
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 3em;
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 10px;
+        color: gold;
+    }
+
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .product {
+        background: #222;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .product img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .product h3 {
+        margin: 10px;
+        color: gold;
+    }
+
+    .product p {
+        margin: 0 10px 20px;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    .contact form {
+        max-width: 500px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .contact button {
+        background: gold;
+        color: black;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    footer {
+        background: #000;
+        text-align: center;
+        padding: 15px;
+        color: #999;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Crown of Kings</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Experience the Taste of Excellence</h2>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Crown of Kings Liquor is your destination for premium spirits, wines, and craft beers. Established with a passion for quality and a dedication to customer experience, we bring you the finest selections from around the globe.</p>
+</section>
+
+<section id="products">
+    <h2>Our Selection</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1556742393-d75f468bfcb0" alt="Whiskey">
+            <h3>Golden Whiskey</h3>
+            <p>Rich, smooth, and aged to perfection.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1527168027773-0cc8909c7a76" alt="Red Wine">
+            <h3>Velvet Red Wine</h3>
+            <p>Bold flavors with a silky finish.</p>
+        </div>
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1612010167106-16a2f03b7c37" alt="Craft Beer">
+            <h3>Craft Lager</h3>
+            <p>Crisp, refreshing, and locally brewed.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Crown of Kings Liquor. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
